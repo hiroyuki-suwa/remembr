@@ -8,3 +8,6 @@ A minimal vocabulary & task card app built with Next.js + TypeScript.
 
 ## Status
 coming soon...
+
+## Documentation
+- [Setup and Development Guide](./docs/setup.md)
