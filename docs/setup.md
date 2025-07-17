@@ -59,6 +59,23 @@ Next.js プロジェクトをセットアップします
 - [README.md](../README.md) にリンクを貼る
 - git commit -m "create docs/setup.md"
 
+### 0.3. パッケージインストール
+#### 0.3.0. Redux Toolkit
+- yarn add コマンド:
+	```sh
+	$ yarn add @reduxjs/toolkit react-redux
+	```
+- ディレクトリとファイルを作成:
+	```sh
+	$ mkdir src/store # Redux ストアはこのディレクトリで管理
+	$ touch src/store/index.ts # いったん空のファイルを作成しておく
+	$ touch src/store/hooks.ts # いったん空のファイルを作成しておく
+	$ mkdir -p src/features/cards # Redux スライスはこのディレクトリで管理
+	$ touch src/features/cards/cardsSlice.ts # いったん空のファイルを作成しておく
+	```
+- 関連ドキュメントを更新
+- git commit -m "add Redux Toolkit"
+
 ## 1. 開発
 ### 1.0. アプリケーションの起動
 - yarn dev:

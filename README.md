@@ -5,6 +5,7 @@ A minimal vocabulary & task card app built with Next.js + TypeScript.
 - Next.js (App Router)
 - TypeScript
 - Tailwind CSS
+- Redux Toolkit
 
 ## Status
 coming soon...
