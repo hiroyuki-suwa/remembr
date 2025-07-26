@@ -1,11 +1,14 @@
+import { AppLogo } from "@/app/components/atoms/AppLogo";
+
 export default function Home() {
   return (
-    <div className="absolute min-h-full inset-0 flex flex-col items-center justify-center gap-4 app-bg-fill">
-      <h1 className="text-5xl app-sans-alt">
-        <span className="font-bold">re:</span>
-        <span className="font-light">membr</span>
-      </h1>
-      <p className="text-xl font-light">coming soon...</p>
+    <div className="h-full flex flex-col items-center gap-4 overflow-y-auto app-noscrollbar">
+      <div className="my-auto p-4 text-center">
+        <h1>
+          <AppLogo className="text-5xl" />
+        </h1>
+        <p className="text-xl font-light">coming soon...</p>
+      </div>
     </div>
   );
 }

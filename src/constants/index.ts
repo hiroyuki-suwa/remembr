@@ -2,7 +2,7 @@ export const APP_METADATA = {
   title: "re:membr",
   description: "A minimal vocabulary & task card app for language learners",
   author: "SUWA Hiroyuki",
-  year: 2025,
+  year: new Date().getFullYear(),
 };
 
 interface ExternalLink {
