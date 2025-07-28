@@ -6,6 +6,8 @@ import { AppShell } from "@/app/components/templates/AppShell";
 export const metadata: Metadata = {
   title: APP_METADATA.title,
   description: APP_METADATA.description,
+  openGraph: APP_METADATA.openGraph,
+  twitter: APP_METADATA.twitter,
 };
 
 export default function RootLayout({

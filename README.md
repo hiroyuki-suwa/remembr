@@ -1,4 +1,4 @@
-![re:membr logo](src/app/logo.png)
+![re:membr logo](public/logo.png)
 
 # re:membr
 A minimal vocabulary & task card app built with Next.js + TypeScript.
