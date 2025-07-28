@@ -82,3 +82,33 @@ Next.js プロジェクトをセットアップします
 	```sh
 	$ yarn dev
 	```
+
+## 2. デプロイ
+### 2.0. Vercel へのデプロイ
+0. Vercel アカウントを作成し、Next.js プロジェクトのデプロイ先を準備します。
+	- [vercel.com](https://vercel.com/)
+0. Vercel CLI をインストール:
+	```sh
+	$ yarn global add vercel
+	```
+0. Vercel CLI を使ってデプロイ:
+	```sh
+	$ vercel
+	```
+0. Vercel の対話式プロンプトに従ってセットアップ:
+	```
+	Vercel CLI x.x.x
+
+	? Set up and deploy “remembr”? [Y/n] y
+	? Which scope should it belong to? hiroyuki-suwa
+	? Link to existing project? [y/N] n
+	? What’s your project’s name? remembr
+	? In which directory is your code located? ./
+	? Want to override the settings? [y/N] n
+	? Link to GitHub repository? [Y/n] y
+	```
+	※ 基本的にはすべてデフォルト [Enter] で OK です
+0. デプロイ完了後:
+	- Vercel のダッシュボードでプロジェクトの設定を確認します
+	- 必要に応じて、環境変数・ブランチ設定・Production Domain などを調整します
+	- アプリケーションは Vercel が発行する URL (ex: `https://remembr.vercel.app`) からアクセスできます
