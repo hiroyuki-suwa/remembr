@@ -7,6 +7,6 @@ interface AppCopyrightProps {
 
 export const AppCopyright = ({ className = "" }: AppCopyrightProps) => (
   <span className={`${className}`}>
-    &copy;{year} {author}
+    &copy; {year} {author}
   </span>
 );
