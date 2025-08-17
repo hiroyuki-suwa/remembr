@@ -2,14 +2,16 @@
 
 :root {
   --light: #e6ebef;
+  --lightbg: #e6ebefaa;
   --dark: #041d33;
-  --background: var(--light);
+  --darkbg: #041d33aa;
+  --background: var(--lightbg);
   --foreground: var(--dark);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--dark);
+    --background: var(--darkbg);
     --foreground: var(--light);
   }
 }
@@ -23,12 +25,14 @@
   --font-mono: "Noto Sans Mono", monospace;
 }
 
-.app,
+body {
+  background-image: url(/background.jpg);
+  background-size: cover;
+}
 .app .app-bg-fill {
   background: var(--background);
   color: var(--foreground);
 }
-.app,
 .app * {
   font-family: var(--font-sans);
 }
