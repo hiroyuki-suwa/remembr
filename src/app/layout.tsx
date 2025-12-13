@@ -4,6 +4,7 @@ import { APP_METADATA, EXTERNAL_LINKS } from "@/constants";
 import { AppShell } from "@/app/components/templates/AppShell";
 
 export const metadata: Metadata = {
+  metadataBase: APP_METADATA.metadataBase,
   title: APP_METADATA.title,
   description: APP_METADATA.description,
   openGraph: APP_METADATA.openGraph,
