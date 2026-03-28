@@ -1,13 +1,17 @@
 const title = "re:membr";
 const description = "A minimal vocabulary & task card app for language learners";
+const url = "https://remembr.vercel.app";
+const author = "SUWA Hiroyuki";
+const year = new Date().getFullYear();
 
 export const APP_METADATA = {
+  metadataBase: new URL(url),
   title,
   description,
   openGraph: {
     title,
     description,
-    url: "https://remembr.vercel.app",
+    url,
     siteName: title,
     images: [
       {
@@ -22,13 +26,13 @@ export const APP_METADATA = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@SUWA_Hiroyuki", // 任意
+    site: "@SUWA_Hiroyuki",
     title,
     description,
     images: ["/logo.png"],
   },
-  author: "SUWA Hiroyuki",
-  year: new Date().getFullYear(),
+  author,
+  year,
 };
 
 interface ExternalLink {
